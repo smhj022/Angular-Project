@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter, Output } from "@angular/core";
 
 
 @Component({
@@ -8,5 +8,12 @@ import { Component } from "@angular/core";
 })
 
 export class HeaderComponent {
+
+    @Output() navigationOption = new EventEmitter<string>();
+
+    onSelect(option: string) {
+        this.navigationOption.emit(option);
+    }
+
 
 }
