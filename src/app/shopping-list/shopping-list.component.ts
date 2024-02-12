@@ -15,4 +15,10 @@ export class ShoppingListComponent {
 
   constructor() { }
 
+  AddNewIngredient(ingredient: Ingredient) {
+    this.ingredients.push(ingredient);
+  }
+
+
+
 }
