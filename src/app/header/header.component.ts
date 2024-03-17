@@ -9,11 +9,11 @@ import { Component, EventEmitter, Output } from "@angular/core";
 
 export class HeaderComponent {
 
-    @Output() navigationOption = new EventEmitter<string>();
+    // @Output() navigationOption = new EventEmitter<string>();
 
-    onSelect(option: string) {
-        this.navigationOption.emit(option);
-    }
+    // onSelect(option: string) {
+    //     this.navigationOption.emit(option);
+    // }
 
 
 }
